@@ -1,0 +1,603 @@
+:root{
+    --garamond: 'EB Garamond', serif;
+    --roboto: 'Roboto', sans-serif;
+    --gris: #243238;
+    --gristextos: #47475b;
+    --grisclaro: #8a94a4;
+    --verde: #31af36;
+    --celeste: #9cc9f5;
+
+    }
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.wrapper{
+	max-width: 1140px;
+	margin: auto;
+}
+.wrapperdos{
+    max-width: 1400px;
+    margin: auto;
+}
+/*--- flex---*/
+.flex{
+    display: flex;
+}
+.fdcolum{
+    flex-direction: column;
+}
+.acenter{
+    align-items: center;
+}
+.jcenter{
+    justify-content: center;
+}
+.jend{
+    justify-content: flex-end;
+}
+.aend{
+    align-items: flex-end;
+}
+.jstart{
+    justify-content: flex-start;
+}
+.astart{
+    align-content: flex-start;
+}
+.jbetween{
+    justify-content: space-between;
+}
+.abetweeen{
+    align-items: space-between;
+}
+.jaround{
+    justify-content: space-around;
+}
+.aaround{
+    align-items: space-around;
+}
+.abetweeen{
+    align-content: space-between;
+}
+.fwrap{
+    flex-wrap: wrap;
+}
+.fnwrap{
+    flex-wrap: nowrap;
+}
+.fcolum{
+    flex: column;
+}
+/* ---menu flota----*/
+.menu_principal{
+    background-color: var(--gris);
+    height: 80px;
+    font-family: var(--roboto);
+    font-weight: 300;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+.menu_izq{
+    height: 80px;
+}
+.menu_izq p{
+    color: var(--celeste);
+}
+.fa-caret-left{
+    color: var(--celeste);
+    padding-right: 5px;
+}
+.fa-mobile-alt, .fa-tablet-alt, .fa-desktop{
+    margin: 0px 10px 0px 10px;
+    color: var(--grisclaro);
+    font-size: 25px;
+}
+.fa-mobile-alt:hover, .fa-tablet-alt:hover, .fa-desktop:hover{
+    color: white;
+}
+
+
+.btn{
+    text-align: center;
+    border-radius: 8px;
+    padding: 10px;
+}
+.verde{
+    background-color: var(--verde);
+    color: white;
+    font-family: var(--roboto);
+    cursor: pointer;
+    display: block;
+}
+.blanco{
+    color: var(--gris);
+    background-color: white;
+    cursor: pointer;
+}
+.botones h3{
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+}
+.fa-heart,.fa-caret-square-up {
+    padding-left: 30px;
+    color: white;
+    font-size: 25px;
+}
+/* -- cabecera --*/
+.cabecera{
+    background-image: url(img/descarga.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+    text-align: center;
+    margin-top: 30px;
+}
+.cabecera h2{
+    font-weight: 400;
+    font-family: var(--garamond);
+    color: white;
+    font-style: oblique;
+}
+.cabecera h1{
+    font-size: 40px;
+    color: white;
+    margin-bottom: 40px;
+}
+.cabecera img{
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.vacio{
+    border: 1px solid white;
+    color: white;
+    padding: 10px 20px;
+    font-family: var(--garamond);
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.vacio:hover{
+    padding: 10px 50px;
+}
+.cabecera hr{
+    border: 0.5px solid white;
+    width: 100px;
+    margin-bottom: 100px;
+}
+.tel{
+    cursor: pointer;
+}
+.sub{
+    border: 1px solid white;
+    width: 130px;
+    margin-left: 30px;
+    display: none;
+}
+.sub:hover{
+    display: inline-block;
+}
+
+.welcome hr{
+    border: 1 solid black;
+    width: 70px;
+    margin-top: 100px;
+    color: var(--gris);
+}
+.welcome h1{
+    font-size: 40px;
+    margin-top: 30px;
+    font-family: var(--garamond);
+    font-weight: 200;
+    color: var(--gristextos);
+}
+.welcome p{
+  font-size: 27px;
+  color: var(--grisclaro);
+  text-align: center;
+  width: 80%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/*--- flecha y galeria --*/
+.fa-arrow-down{
+    font-size: 40px;
+    transition: 0.5s;
+    position: relative;
+    margin-top: 40px;
+}
+.fa-arrow-down:hover {
+    transform: translateY(20px);
+}
+.mitadgaleria{
+    overflow: hidden;
+    gap: 30px;
+    flex: 1;
+}
+
+.mitadgaleria img{
+    height: 100%;
+    width: 100%;
+    transition: 0.5s;
+    display: block;
+}
+/*display block saca la separacion de las dos imagenes*/
+.mitadgaleria img:hover{
+    transform: scale(1.3);
+}
+
+.galeria{
+    gap: 30px;
+    margin-top: 100px;
+    font-family: var(--garamond);
+    width: 100%;
+    flex: 1;
+}
+.img_uno{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    object-fit: cover;
+
+}
+.img_dos{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    object-fit: cover;
+}
+
+/* overflow hace que no se salga la imagen de la caja al agrandarse con transform (que esta puesto arriba en las img) flex 1 haace que las imagnes tengan el mismo alto que ancho */
+/*--- our history--*/
+.mitad hr{
+    width: 70px;
+    border: 1px solid var(--gris);
+}
+.mitad h1{
+    margin-top: 50px;
+    color: var(--gristextos);
+    font-size: 40px;
+}
+.mitad{
+    flex: 1;
+}
+.our{
+    margin-top: 100px;
+    font-weight: 200;
+    gap: 30px;
+}
+.mitad p{
+    font-size: 27px;
+    color: var(--grisclaro);
+    margin-top: 40px;
+}
+/*-- imagenes carta--*/
+.menu_dia{
+    margin-top: 100px;
+    transition: 5s;
+    gap: 30px;
+}
+.caja{
+    position: relative;
+    width: 100%;
+}
+.menu{
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-family: var(--garamond);
+    font-weight: 100;
+    padding-top: 180px;
+}
+.menu h1{
+    font-size: 70px;
+    font-weight: 400;
+}
+.menu h2{
+    font-size: 40px;
+    font-weight: 100;
+    margin-top: 30px;
+}
+.frito{
+    padding-bottom: 53px;
+}
+.menu p{
+    font-size: 30px;
+    margin-top: 40px;
+    margin: 40px 40px 0px 40px
+}
+.menu hr{
+    width: 70px;
+}
+
+.img_plato{
+    overflow: hidden;
+    display: block;
+    flex: 1;
+    width: 100%;
+}
+.img_plato img{
+    transition: 1.5s; 
+    object-fit: cover;
+    height: 100%;
+
+}
+.img_plato:hover img{
+    transform: scale(1.3);
+}
+.linea{
+    margin-bottom: 40px;
+}
+/*la transicion va en la imagen que quiero que se agrande*/
+
+/* ---- carta -----*/
+.carta{
+    gap: 40px;
+    font-family: var(--garamond);
+}
+.our_menu{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    color: var(--gristextos);
+    text-align: center;
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.our_menu hr{
+    width: 100px;
+    border: 1px solid black;
+}
+.nav h2{
+    margin-right: 30px;
+    color: var(--grisclaro);
+    font-family: var(--garamond);
+}
+.derecha{
+    flex: 1;
+}
+.izquierda{
+    flex: 1;
+}
+.mitadcarta h1{
+    color: var(--gristextos);
+    font-weight: 200;
+    font-size: 30px;
+    margin-top: 40px;
+}
+.precio{
+    font-size: 40px;
+    font-weight: 200;
+}
+.izquierda p{
+    color: var(--grisclaro);
+    font-size: 30px;
+    margin-top: 10px;
+}
+.derecha p{
+    color: var(--grisclaro);
+    font-size: 30px;
+    margin-top: 10px;
+
+}
+.btn_gris{
+    border: 1px solid var(--gris);
+    color: var(--gris);
+    padding: 10px 20px;
+    font-family: var(--garamond);
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-top: 50px;
+}
+.btn_gris:hover{
+    padding: 10px 50px;
+}
+.carta_entera{
+    flex: 1;
+}
+.carta {
+    display: none;
+}
+.carta_entera .activo{
+    display: flex;
+}
+.nav h2.activo{
+    color: var(--gris);
+}
+/*---desayuno- --*/
+.desayuno{
+    gap: 30px;
+    padding-top: 100px;
+}
+.col, .fila{
+    flex: 1;
+    overflow: hidden;
+}
+.fila{
+    position: relative;
+}
+.col.flex{
+    gap: 30px;
+}
+.col img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.fila img{
+    height: 100%;
+    object-fit: cover;
+}
+.col img{
+    object-fit: cover;
+    height: 100%;
+}
+.col:hover > img{
+    transform: scale(1.1);
+}
+.fila:hover > img{
+    transform: scale(1.1);
+}
+.platos{
+    text-align: center;
+}
+.platos .col.vertical{
+    padding: 50px;
+}
+.platos .col{
+    flex-basis: 49%;
+}
+.col{
+    position: relative;
+   
+}
+.texto{
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-family: var(--garamond);
+    z-index: 20;
+    width: 400px;
+    font-weight: 100;
+    display: block;
+}
+
+.texto h1{
+    font-size: 70px;
+    font-weight: 100;
+}
+.texto h2{
+    font-weight: 100;
+}
+/*formulario*/
+.reservation{
+    text-align: center;
+    font-family: var(--garamond);
+    color: var(--gris);
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.formulario{
+    width: 40%;
+}
+.reservation hr{
+    width: 50px;
+    margin-top: 30px;
+}
+.reservation h1{
+    margin-top: 10px;
+    font-size: 50px;
+    font-weight: 100;
+}
+input{
+    font-family: var(--garamond);
+    font-size: 30px;
+    font-weight: 100;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 10px 10px 10px;
+    width: 100%;
+    font-style: italic;
+    outline: none;
+    color: var(--grisclaro);
+}
+
+.form_abajo input{
+    margin: 0px 20px 0px 0px;
+}
+.form_abajo input:last-child{
+    margin: 0px;
+}
+.request{
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 100px;
+}
+
+/* --mapa--*/
+.mapa iframe{
+    width: 100%;
+}
+.pie{
+    font-family: var(--garamond);
+    color: var(--gristextos);
+    font-style: italic;
+    font-weight: 100;
+    margin-top: 100px;
+    text-align: center;
+}
+.iconos_pie{
+    margin-top: 100px;
+    font-size: 20px;
+    color: var(--grisclaro);
+}
+.iconos_pie i{
+    margin-right: 10px;
+}
+.iconos_pie i:hover{
+    color: var(--gris);
+}
+.ultimo{
+    margin-bottom: 100px;
+}
+@media(max-width: 1000px){
+    .wrapper{
+        width: 90%;
+    }
+    .desayuno{
+        flex-direction: column;
+    }
+    .galeria{
+        flex-direction: column;
+    }
+    .menu_dia{
+        flex-direction: column;
+    }
+    .our{
+        flex-direction: column;
+    }
+}
+
+@media(max-width:775px){
+    .galeria{
+        flex-direction: column;
+    }
+    .desayuno{
+        flex-direction: column;
+    }
+    .menu_dia{
+        flex-direction: column;
+    }
+   .menu_izq i{
+       display: none;
+   }
+   .menu_izq p{
+       padding-left: 10px;
+   }
+   .nav{
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid var(--gris);
+        padding-top: 10px;
+        padding-bottom: 10px;
+        
+   }
+   .carta{
+       flex-direction: column;
+   }
+      
+}
